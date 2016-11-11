@@ -12,7 +12,7 @@ const linearScale = d3.scaleLinear()
 	.domain([0, 100])
 	.range([0, 10]);
 
-console.log(linearScale(50)); // outputs 5
+console.log(linearScale(50)); // Outputs 5
 ```
 
 To make sure that the given number remains within the boundaries of the given range, you can use the ``clamp`` method.
@@ -27,4 +27,14 @@ console.log(linearScale(150)); // Outputs 25
 linearScale = linearScale.clamp(true);
 
 console.log(linearScale(150)); // Outputs 10
+```
+
+You can ``invert`` the linear scale in order to use the range as the domain and the domain as the range.
+
+```js
+const linearScale = d3.scaleLinear()
+	.domain([0, 100]) // Using invert, this becomes the range...
+	.range([0, 10]); // ...and this the domain
+
+console.log(linearScale.invert(5)); // outputs 50
 ```
