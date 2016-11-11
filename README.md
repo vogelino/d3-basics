@@ -38,3 +38,14 @@ const linearScale = d3.scaleLinear()
 
 console.log(linearScale.invert(5)); // outputs 50
 ```
+
+### Time scales
+Time scales work similar to linear scales but accept a domain of `Date` instances instead of numbers and retrieve a matching number.
+
+```js
+const timeScale = d3.scaleTime()
+	.domain([new Date(2017, 3, 1), new Date(2017, 3, 30)])
+	.range([0, 100]);
+
+console.log(timeScale(new Date(2017, 3, 15))); // Outputs 50
+```
