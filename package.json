@@ -4,7 +4,7 @@
   "description": "Testing and learning the basics of D3.js, a JavaScript library for manipulating documents based on data.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "browser-sync": "browser-sync start -s src -f src --no-ui --no-notify"
   },
   "repository": {
     "type": "git",
