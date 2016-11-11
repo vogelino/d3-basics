@@ -1,0 +1,26 @@
+{
+  "name": "d3-basics",
+  "version": "1.0.0",
+  "description": "Testing and learning the basics of D3.js, a JavaScript library for manipulating documents based on data.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vogelino/d3-basics.git"
+  },
+  "keywords": [
+    "d3",
+    "d3js",
+    "basics",
+    "learning",
+    "howto"
+  ],
+  "author": "Lucas Vogel <contact@vogelino.com> (http://vogelino.com/)",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/vogelino/d3-basics/issues"
+  },
+  "homepage": "https://github.com/vogelino/d3-basics#readme"
+}
